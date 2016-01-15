@@ -258,6 +258,17 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="35"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8F-ns-kaS">
+                                <rect key="frame" x="266" y="576" width="69" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="6sc-Sv-U3O"/>
+                                    <constraint firstAttribute="height" constant="24" id="pCd-IC-x6h"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plj-sS-4Zq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -272,9 +283,17 @@
                             <constraint firstAttribute="trailing" secondItem="J1I-JN-bXg" secondAttribute="trailing" id="QeM-sg-Pp7"/>
                             <constraint firstItem="J1I-JN-bXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RQv-Lj-uKA"/>
                             <constraint firstItem="hWb-ke-lIE" firstAttribute="trailing" secondItem="Jgm-Oa-A05" secondAttribute="trailing" constant="10" id="bXh-0L-usk"/>
+                            <constraint firstItem="e8F-ns-kaS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gVS-wv-hmq"/>
                             <constraint firstItem="hWb-ke-lIE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iGT-bI-Drc"/>
+                            <constraint firstItem="e8F-ns-kaS" firstAttribute="trailing" secondItem="hWb-ke-lIE" secondAttribute="trailing" id="pnR-yc-tdm"/>
                             <constraint firstItem="J1I-JN-bXg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tlA-sD-pq7"/>
+                            <constraint firstItem="e8F-ns-kaS" firstAttribute="bottom" secondItem="hWb-ke-lIE" secondAttribute="bottom" constant="15" id="v9p-ra-v90"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pnR-yc-tdm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="outputLbl" destination="Jgm-Oa-A05" id="cAs-Gw-BQT"/>
@@ -298,6 +317,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>

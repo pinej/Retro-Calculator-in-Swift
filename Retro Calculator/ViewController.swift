@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         case Substract = "-"
         case Add = "+"
         case Empty = "Empty"
+        
     }
     
     
@@ -76,6 +77,18 @@ class ViewController: UIViewController {
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(currentOperation)
     }
+    
+    @IBAction func onClearBtnPressed(sender: AnyObject) {
+
+        
+        leftValStr = "0"
+        rightValStr = "0"
+        runningNumber = ""
+        currentOperation = Operation.Empty
+        outputLbl.text = "0"
+    }
+    
+   
     
     func processOperation (op: Operation) {
         playSound()
